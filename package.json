@@ -1,0 +1,36 @@
+{
+  "name": "secret-api",
+  "version": "1.0.0",
+  "description": "secret-api",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=run node ./src/index.js",
+    "dev": "NODE_ENV=run nodemon -L --inspect=0.0.0.0 ./src/index.js",
+    "test": "NODE_ENV=test jest --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keep-secrets/secret-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keep-secrets/secret-api/issues"
+  },
+  "homepage": "https://github.com/keep-secrets/secret-api#readme",
+  "dependencies": {
+    "awilix": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "jest": "26.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.7.0",
+    "uuid": "^8.3.2",
+    "uuid-mongodb": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
