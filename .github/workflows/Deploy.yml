@@ -17,4 +17,4 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           passphrase : ${{ secrets.SERVER_SSH_PASSPHRASE }}
-          script: cd /home/${{ github.event.repository.name }} && git pull && npm i && pm2 restart ${{ github.event.repository.name }}
+          script: cd /home/${{ github.event.repository.name }} && git fetch && git pull && npm i && pm2 restart ${{ github.event.repository.name }}
